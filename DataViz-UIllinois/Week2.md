@@ -81,5 +81,54 @@
 
 ----
 
+## Glyphs, Parallel Coordinates & Stacked Graphs
+
 - Glyphs
-  - 
+  - The Glyph is the shape in a part of a chart.
+  - In bar shape charts, the top of bar charts, start/end of Gantt charts and the bar shape.
+  - The shape of points in line charts and scatter plots.
+  - Table is a scatter plot of regular variables.
+  - Can vary in shape, color, size.
+  - We can use mapping with the glyphs. And combine multiple maps to give glyphs meaning.
+  - We can use glyphs to represent more than just data. It can be used to represent variants. Like Error Bars.
+  - Even in tables, we can use glyphs like colours to indicate values.
+  - It's possible to use glyphs to do high dimension visualization data, like each one is a plot itself.
+  - Chernoff faces. Use drawn face characteristics to plot features.
+
+- Parallel Coordinates
+  - Parallel Coordinates offer ways to plot higher dimensional spaces than is usually possible.
+  - Imagine a scatter plot. With the X and Y axis. Break them and drag the points to the projection of those two axis.
+  ![Parallel Axis](w2_parallel.png)
+  - Draw a line to each correspondent point.
+  - It helps to notice if the points are collinear.
+  - Do this with every dimension, and you have the following image.
+ ![Parallel Axis](w2_parallel2.png)
+  - You can notice that these points can converge as seen to z and w, to notice future convergence.
+  - It needs some work to find the best combination to use to visualize data or features in data.
+- Stacked Graphs
+  - In stacked bar chart, the central limit theorem explains that as more bars are added, the sums will vary less.
+  - In Pie Charts can be degraded if use 3D, because of perspective.
+  - Stacking Order Matters!
+  - Diverging Stacked Bar Charts, 
+  - If is needed to stack 3 graphs, is better to use stacked line graphs.
+  - In a stacked graph layout it is noticeable the effect in the higher parts of the graph being harder to measure the change than the lower part.
+  - We can use the ThemeRiver Layout to try to correct the variation reseting the center of the graph. Using g0 = -1/2 (sum of all functions) and minimizes the girth of the chart and the top and the bottom slopes.
+  - It is possible to use Streamgraph layout using g0 = - 1 / n + 1 times the (sum for each functuion with [ ( n - i + 1) fi ] ).
+  - Minimizes deviantion and "wiggle".
+  - Changing the order of Streamgraph functions helps even more to notice each function pattern and visualization.
+
+----
+
+## Tufte's Design Rules & Using Color
+
+- Tufte's Design Rules
+  - Let the Data Speak
+  - A picture is worth a thousand words
+  - Annotation (Label your Axis)
+  - Avoid Chartjunk
+  - Data-Ink Ratio (Maximize ratio of data to ink in your visualization)
+  - Micro/Macro. (Use micro detail at macro level. Zoomable interfaces)
+  - Information Layers
+  - Multiples (Consistent Design)
+  - Narrative
+  - Color
