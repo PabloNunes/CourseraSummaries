@@ -132,3 +132,22 @@
   - Multiples (Consistent Design)
   - Narrative
   - Color
+
+- Color
+  - Is important to use color to trigger perceptual cues and help sensing the data.
+  - Think about color in the more natural set of components.
+  - Hue, Saturation, Value.
+  - Saturation is how intense the color is.
+  - Value is how bright a color is, the distance from black.
+  - Hues
+    - Observers can rapidly differentiate between only five to ten hues.
+    - Twelve colors (6 + 6) recommended by Ward's "Information Visualization"
+  - Saturation
+    - Use saturation in points, strokes and symbols
+    - Avoid saturation in fills or larger areas
+  - Contrast
+    - Use higher luminance contrast to gain attention
+    - Make sure text has sufficient luminance contrast
+  - Use colors for ordinal values and Hue for categories.
+  - Color maps for quantitative values. It can be problematic, can be influence light in 3d maps.
+  - http://colorbrewer2.org/
