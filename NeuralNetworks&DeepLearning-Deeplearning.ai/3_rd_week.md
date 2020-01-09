@@ -19,3 +19,9 @@
   - Leaky ReLu is a ReLu but the negative z has a slope.
     ![Activation_Function](3_activation_functions.png)
   - Linear activation function is rare because functions can get complex
+
+- To backpropagate we use the gradients using the chain rule to get the difference of the errors.
+- Then we update the weights and the bias using these gradients with a learning rate.
+- It is better to random your initial weights than to initialize in zero, because, initializing in zero will not get a good effect (for being symmetrical) in the gradient descent and the weights update.
+- Initialization usually is initialized with small values.
+- 
