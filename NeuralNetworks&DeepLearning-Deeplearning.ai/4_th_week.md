@@ -16,4 +16,29 @@
     - The Third layer is trying to form the face
   - These kind of processes (simple to complex) in NNs occurs in many kinds of problems
 
-- 
+- Forward propagation for Layer l
+  - Input: a[l-1]
+  - Outpu: a[l], cache z[l]
+  - Z[l] = W[l]*A[l-1] + b[l]
+  - A[l] = g[l] Z[l]
+
+- Backward propagation for layer l
+  - Input da[l]
+  - Output da[l-1], dW[l], db[l]
+  - dz[l] = dA*g[l]'(Z[l])
+  - dW[l] = (1/m) dZ[l] A[l-1]t
+  - db[l] = 1/m * np.sum(dZ[l], axis = 1, keepdims = True)
+  - da[l-1] = W[l]t dZ[l]
+- The start of BP
+  - dA[l] = (-y[1]/a[1] + (1-y[1])/(1-a[1]) ......  -y[m]/a[m] + (1-y[m])/(1-a[m]))
+
+- Hyperparameters vs. Parameters
+  - Parameters: The weigths and bias
+  - Hyperparameters:
+    - Learning rate
+    - Iterations
+    - Hidden layer L
+    - Hidden Units n[1], n[2]
+    - Activation Function
+
+- Applied Deep Learning is a very empirical process: Idea, Code, Experiment
